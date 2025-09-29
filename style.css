@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(img/fundo_pronto.jpg);
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 @font-face {
     font-family: 'Saiyan';
     src: url('css/FontesArquivos/Saiyan-Sans.ttf');
@@ -27,8 +37,7 @@
 
 .container-fluid {
     max-width: 1000px;
-    margin-left: 220px;
-    margin-right: 220px;
+    margin: auto;
     height: 107px;
     padding: auto;
 
@@ -42,8 +51,7 @@
 header {
     background-color: black;
     width: 100%;
-    padding: -10px;
-    height: 98px;
+    height: 95px;
 }
 
 .logo img {
@@ -122,8 +130,7 @@ header {
 
 .carousel {
     width: 100%;
-    height: 505px;
-    margin-bottom: 10%;
+    height: 450px;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.247);
     margin: auto;
     background-color: transparent !important;
@@ -132,11 +139,10 @@ header {
 .carousel-inner {
     width: 100%;
     height: 505px;
-    margin-bottom: 5%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 550px;
+    height: 450px;
 }
