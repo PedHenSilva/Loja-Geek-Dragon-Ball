@@ -131,7 +131,7 @@ header {
 .carousel {
     width: 100%;
     height: 450px;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.247);
+    
     margin: auto;
     background-color: transparent !important;
 }
@@ -139,10 +139,20 @@ header {
 .carousel-inner {
     width: 100%;
     height: 505px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);;
+    
 }
 
 .carousel-item img {
     width: 100%;
     height: 450px;
+}
+
+.footer{
+    background-color:#ff8400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
 }
