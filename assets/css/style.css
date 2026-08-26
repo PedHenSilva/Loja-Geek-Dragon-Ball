@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(img/fundo_pronto.jpg);
+    background-image: url(../img/fundo_pronto.jpg);
     background-color: white;
     background-attachment: fixed;
     background-size: cover;
