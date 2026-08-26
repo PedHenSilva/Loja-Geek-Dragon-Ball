@@ -1,0 +1,53 @@
+.scroll {
+    margin-inline: auto;
+    padding: 6px;
+    overflow: hidden;
+    transform: translateZ(0);
+    height: 50px;
+
+    max-width: 100%;
+    background-color: #ff8400;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scroll-item {
+    white-space: nowrap;
+    will-change: transform;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.scroll-item img {
+    width: 50px;
+    height: 50px;
+
+    display: block;
+    max-height: auto;
+
+    transform: translateZ(0);
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 120px;
+    max-width: max-content;
+    
+    animation: Scroll-Infinito 25s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+@keyframes Scroll-Infinito {
+    100% {
+        transform: translateX(calc(-50% - 60px));
+    }
+}

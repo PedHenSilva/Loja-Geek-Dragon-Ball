@@ -1,0 +1,321 @@
+/* Login CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-preto);
+  font-family: 'OutfitR', sans-serif;
+  color: var(--color-branco);
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --color-dominante: #FF8C00;
+  --color-secundaria: #1A237E;
+  --color-contraste: #FFEB3B;
+  --color-branco: #F5F5F5;
+  --color-preto: #212121;
+  --color-hover: #E9B27F;
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url(../fonts/RussoOne-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OutfitR';
+    src: url(../fonts/Outfit-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OutfitEL';
+    src: url(../fonts/Outfit-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'OutfitB';
+    src: url(../fonts/Outfit-ExtraBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OutfitSB';
+    src: url(../fonts/Outfit-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+
+.container-fluid {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    height: 107px;
+    padding: 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+header {
+    background-color: black;
+    width: inherit;
+    height: 95px;
+}
+
+.logo img {
+    max-width: 204px;
+    width: inherit;
+    vertical-align: 0;
+    padding-bottom: 14%;
+}
+
+.menu {
+    max-width: 828px;
+    width: 150%;
+    padding-top: 3px;
+    font-family: Russo;
+
+    display: inherit;
+    justify-content: center;
+    align-items: inherit;
+}
+
+.menu nav {
+    display: inherit;
+    gap: 42px;
+}
+
+.menu nav a{
+    color: var(--color-dominante);
+    text-decoration: none;
+    font-size: 24px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    transition: width 0.3s;
+    top: 30px;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--color-contraste), var(--color-dominante));
+}
+
+.menu nav a:hover::after {
+    width: 60px;
+}
+
+.menu nav a:last-child:hover::after {
+    width: 66px;
+}
+
+.menu nav a:hover {
+    color: var(--color-hover);
+}
+
+.socials {
+    display: inherit;
+}
+
+.socials button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-dominante);
+    border: none;
+    border-radius: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.socials button:hover {
+    background-color: var(--color-secundaria);
+}
+
+.socials button:hover i {
+    color: var(--color-contraste);
+}
+
+.socials button i {
+    font-size: 28px;
+    padding-top: 5px;
+    color: black;
+    transition: color 0.3s;
+}
+
+/* Login */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 40px 20px;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+
+.login-container {
+  background-color: #2A2A2A;
+  border: 2px solid var(--color-dominante);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+  padding: 40px 50px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-container:hover {
+  box-shadow: 0 0 35px rgba(255, 140, 0, 0.5);
+}
+
+.titulo-login {
+  font-family: 'Russo', sans-serif;
+  font-size: 40px;
+  color: var(--color-dominante);
+  margin-bottom: 25px;
+}
+
+.formlogin label {
+  font-family: 'OutfitSB';
+  color: var(--color-contraste);
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+  font-size: 18px;
+}
+
+small,
+.form-text {
+  color: var(--color-branco);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.input-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #1A1A1A;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: var(--color-branco);
+  font-family: 'OutfitEL';
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-login:focus {
+  border-color: var(--color-secundaria);
+  box-shadow: 0 0 8px rgba(26, 35, 126, 0.5);
+}
+
+.btn-login {
+  background-color: var(--color-dominante);
+  color: var(--color-branco);
+  font-family: 'Russo';
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--color-contraste);
+  color: black;
+  transform: scale(1.05);
+}
+
+.formlogin small {
+  -webkit-text-fill-color: var(--color-contraste);
+}
+
+/* Footer */
+
+.fundofooter {
+    margin-top: 7%;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: var(--color-branco);
+    padding: 25px 6%;
+    gap: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.titulo {
+    margin-top: auto;
+    gap: 10px;
+    line-height: 1.4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo h4 {
+    font-size: 20px;
+    font-family: OutfitEL;
+    margin: 0;
+    color: var(--color-contraste);
+}
+
+.titulo h3 {
+    font-size: 22px;
+    font-family: Russo;
+    margin: 0;
+    color: var(--color-dominante);
+}
+
+.logos {
+    gap: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logos img {
+    width: 140px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,109 @@
+:root {
+  --color-dominante: #FF8C00;
+  --color-botao: #0E47A1;
+  --color-contraste: #FFEB3B;
+  --color-branco: #F5F5F5;
+  --color-preto: #212121;
+  --color-hover: #E9B27F;
+}
+
+.container-fluid-cards {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    gap: 30px;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.seção-card {
+    font-family: 'Russo';
+    color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1-1, .card1-2, .card1-3, .card1-4 {
+    height: auto;
+    width: 240px;
+    background: var(--color-preto);
+    border: 2px solid var(--color-dominante);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(255, 123, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1-1:hover, .card1-2:hover, .card1-3:hover, .card1-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.badge-carrinho {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+    
+.socials button {
+    position: relative; 
+}
+
+.card1-1:hover, .card1-2:hover, .card1-3:hover, .card1-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 123, 0, 0.45);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn {
+    font-family: 'Russo';
+    color: var(--color-branco);
+    background-color: var(--color-botao);
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 6px 18px;
+    margin-top: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a66ff;
+    box-shadow: 0 0 10px var(--color-botao);
+}
+
+.Preco {
+    font-family: 'Russo';
+    color: var(--color-dominante);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h6 {
+    font-family: 'OutfitEL';
+    font-size: 16px;
+    color: var(--color-branco);
+    text-align: center;
+    margin-top: 8px;
+}
